@@ -4,7 +4,7 @@ import { create } from "zustand";
 import { useAuthUserStore } from "./useAuthStore";
 import { useChatStore } from "./useChatStore";
 
-const BaseApiUrl = import.meta.env.MODE === 'production' ? '/' : 'http://localhost:5001'
+const BaseApiUrl = import.meta.env.VITE_BASE_API_URL
 
 export interface SocketStoreProps {
     socket: Socket | null;
